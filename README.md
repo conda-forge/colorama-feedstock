@@ -3,7 +3,7 @@ About colorama
 
 Home: https://github.com/tartley/colorama
 
-Package license: BSD 3-Clause License
+Package license: BSD 3-Clause
 
 Feedstock license: BSD 3-Clause
 
