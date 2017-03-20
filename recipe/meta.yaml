@@ -30,7 +30,7 @@ test:
 
 about:
     home: https://github.com/tartley/colorama
-    license: BSD 3-Clause License
+    license: BSD 3-Clause
     summary: 'Cross-platform colored terminal text.'
 
 extra:
