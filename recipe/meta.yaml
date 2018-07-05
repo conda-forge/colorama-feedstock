@@ -1,27 +1,22 @@
-{% set name = "colorama" %}
 {% set version = "0.3.9" %}
-{% set build = 1 %}
-{% set sha256 = "48eb22f4f8461b1df5734a074b57042430fb06e1d61bd1e11b078c0fe6d7a1f1" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/c/colorama/colorama-{{ version }}.tar.gz
+  sha256: 48eb22f4f8461b1df5734a074b57042430fb06e1d61bd1e11b078c0fe6d7a1f1
 
 build:
+  number: 1
   noarch: python
-  number: {{ build }}
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - pip
     - python
-    - setuptools
   run:
     - python
 
