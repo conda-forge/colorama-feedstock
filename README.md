@@ -14,14 +14,15 @@ Summary: Cross-platform colored terminal text.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/colorama-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/colorama-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/colorama-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/colorama-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/colorama-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/colorama-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/colorama-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/colorama-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/colorama/badges/version.svg)](https://anaconda.org/conda-forge/colorama)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/colorama/badges/downloads.svg)](https://anaconda.org/conda-forge/colorama)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-colorama-green.svg)](https://anaconda.org/conda-forge/colorama) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/colorama.svg)](https://anaconda.org/conda-forge/colorama) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/colorama.svg)](https://anaconda.org/conda-forge/colorama) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/colorama.svg)](https://anaconda.org/conda-forge/colorama) |
 
 Installing colorama
 ===================
@@ -66,6 +67,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
