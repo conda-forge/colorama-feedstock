@@ -1,15 +1,15 @@
-{% set version = "0.3.9" %}
+{% set version = "0.4.0" %}
 
 package:
   name: colorama
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/c/colorama/colorama-{{ version }}.tar.gz
-  sha256: 48eb22f4f8461b1df5734a074b57042430fb06e1d61bd1e11b078c0fe6d7a1f1
+  url: https://pypi.io/packages/source/c/colorama/colorama-{{ version }}.zip
+  sha256: c9b54bebe91a6a803e0772c8561d53f2926bfeb17cd141fbabcb08424086595c
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
@@ -27,6 +27,7 @@ test:
 about:
   home: https://github.com/tartley/colorama
   license: BSD-3-Clause
+  license_file: LICENSE.txt
   summary: 'Cross-platform colored terminal text'
 
 extra:
