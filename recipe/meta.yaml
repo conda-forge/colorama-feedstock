@@ -1,12 +1,12 @@
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: colorama
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/c/colorama/colorama-{{ version }}.zip
-  sha256: c9b54bebe91a6a803e0772c8561d53f2926bfeb17cd141fbabcb08424086595c
+  url: https://pypi.io/packages/source/c/colorama/colorama-{{ version }}.tar.gz
+  sha256: 05eed71e2e327246ad6b38c540c4a3117230b19679b875190486ddd2d721422d
 
 build:
   number: 0
