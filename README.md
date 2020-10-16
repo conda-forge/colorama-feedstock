@@ -5,9 +5,13 @@ Home: https://github.com/tartley/colorama
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/colorama-feedstock/blob/master/LICENSE.txt)
 
 Summary: Cross-platform colored terminal text
+
+Development: https://github.com/tartley/colorama
+
+Documentation: http://pypi.python.org/pypi/colorama
 
 colorama is a cross-platform colored terminal text.It makes
 ANSI escape character sequences (for producing colored terminal text
