@@ -1,28 +1,33 @@
-{% set version = "0.4.4" %}
+{% set name = "colorama" %}
+{% set version = "0.4.5" %}
 
 package:
-  name: colorama
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/c/colorama/colorama-{{ version }}.tar.gz
-  sha256: 5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/colorama-{{ version }}.tar.gz
+  sha256: e6c6b4334fc50988a639d9b98aa429a0b57da6e17b9a44f0451f930b6967b7a4
 
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
 
 test:
   imports:
     - colorama
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/tartley/colorama
