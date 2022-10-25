@@ -1,5 +1,5 @@
 {% set name = "colorama" %}
-{% set version = "0.4.5" %}
+{% set version = "0.4.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/colorama-{{ version }}.tar.gz
-  sha256: e6c6b4334fc50988a639d9b98aa429a0b57da6e17b9a44f0451f930b6967b7a4
+  sha256: 08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44
 
 build:
   number: 0
@@ -16,10 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
+    - hatchling >=0.25.1
   run:
-    - python >=3.6
+    - python >=3.7
 
 test:
   imports:
